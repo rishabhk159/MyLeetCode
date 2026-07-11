@@ -95,6 +95,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Math
 |  |
 | ------- |
+| [0002-add-two-numbers](https://github.com/rishabhk159/MyLeetCode/tree/master/0002-add-two-numbers) |
 | [3754-concatenate-non-zero-digits-and-multiply-by-sum-i](https://github.com/rishabhk159/MyLeetCode/tree/master/3754-concatenate-non-zero-digits-and-multiply-by-sum-i) |
 | [3756-concatenate-non-zero-digits-and-multiply-by-sum-ii](https://github.com/rishabhk159/MyLeetCode/tree/master/3756-concatenate-non-zero-digits-and-multiply-by-sum-ii) |
 ## Prefix Sum
@@ -113,4 +114,12 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [3534-path-existence-queries-in-a-graph-ii](https://github.com/rishabhk159/MyLeetCode/tree/master/3534-path-existence-queries-in-a-graph-ii) |
+## Linked List
+|  |
+| ------- |
+| [0002-add-two-numbers](https://github.com/rishabhk159/MyLeetCode/tree/master/0002-add-two-numbers) |
+## Recursion
+|  |
+| ------- |
+| [0002-add-two-numbers](https://github.com/rishabhk159/MyLeetCode/tree/master/0002-add-two-numbers) |
 <!---LeetCode Topics End-->
