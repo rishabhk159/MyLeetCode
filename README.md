@@ -42,6 +42,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0003-longest-substring-without-repeating-characters](https://github.com/rishabhk159/MyLeetCode/tree/master/0003-longest-substring-without-repeating-characters) |
+| [0013-roman-to-integer](https://github.com/rishabhk159/MyLeetCode/tree/master/0013-roman-to-integer) |
 | [1331-rank-transform-of-an-array](https://github.com/rishabhk159/MyLeetCode/tree/master/1331-rank-transform-of-an-array) |
 | [1358-number-of-substrings-containing-all-three-characters](https://github.com/rishabhk159/MyLeetCode/tree/master/1358-number-of-substrings-containing-all-three-characters) |
 | [1386-cinema-seat-allocation](https://github.com/rishabhk159/MyLeetCode/tree/master/1386-cinema-seat-allocation) |
@@ -68,6 +69,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0003-longest-substring-without-repeating-characters](https://github.com/rishabhk159/MyLeetCode/tree/master/0003-longest-substring-without-repeating-characters) |
 | [0008-string-to-integer-atoi](https://github.com/rishabhk159/MyLeetCode/tree/master/0008-string-to-integer-atoi) |
+| [0013-roman-to-integer](https://github.com/rishabhk159/MyLeetCode/tree/master/0013-roman-to-integer) |
 | [1081-smallest-subsequence-of-distinct-characters](https://github.com/rishabhk159/MyLeetCode/tree/master/1081-smallest-subsequence-of-distinct-characters) |
 | [1358-number-of-substrings-containing-all-three-characters](https://github.com/rishabhk159/MyLeetCode/tree/master/1358-number-of-substrings-containing-all-three-characters) |
 | [1967-number-of-strings-that-appear-as-substrings-in-word](https://github.com/rishabhk159/MyLeetCode/tree/master/1967-number-of-strings-that-appear-as-substrings-in-word) |
@@ -176,6 +178,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0002-add-two-numbers](https://github.com/rishabhk159/MyLeetCode/tree/master/0002-add-two-numbers) |
 | [0007-reverse-integer](https://github.com/rishabhk159/MyLeetCode/tree/master/0007-reverse-integer) |
 | [0009-palindrome-number](https://github.com/rishabhk159/MyLeetCode/tree/master/0009-palindrome-number) |
+| [0013-roman-to-integer](https://github.com/rishabhk159/MyLeetCode/tree/master/0013-roman-to-integer) |
 | [0486-predict-the-winner](https://github.com/rishabhk159/MyLeetCode/tree/master/0486-predict-the-winner) |
 | [0628-maximum-product-of-three-numbers](https://github.com/rishabhk159/MyLeetCode/tree/master/0628-maximum-product-of-three-numbers) |
 | [0877-stone-game](https://github.com/rishabhk159/MyLeetCode/tree/master/0877-stone-game) |
