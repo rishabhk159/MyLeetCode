@@ -74,6 +74,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0003-longest-substring-without-repeating-characters](https://github.com/rishabhk159/MyLeetCode/tree/master/0003-longest-substring-without-repeating-characters) |
+| [0005-longest-palindromic-substring](https://github.com/rishabhk159/MyLeetCode/tree/master/0005-longest-palindromic-substring) |
 | [0008-string-to-integer-atoi](https://github.com/rishabhk159/MyLeetCode/tree/master/0008-string-to-integer-atoi) |
 | [0013-roman-to-integer](https://github.com/rishabhk159/MyLeetCode/tree/master/0013-roman-to-integer) |
 | [1081-smallest-subsequence-of-distinct-characters](https://github.com/rishabhk159/MyLeetCode/tree/master/1081-smallest-subsequence-of-distinct-characters) |
@@ -159,6 +160,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Dynamic Programming
 |  |
 | ------- |
+| [0005-longest-palindromic-substring](https://github.com/rishabhk159/MyLeetCode/tree/master/0005-longest-palindromic-substring) |
 | [0486-predict-the-winner](https://github.com/rishabhk159/MyLeetCode/tree/master/0486-predict-the-winner) |
 | [0877-stone-game](https://github.com/rishabhk159/MyLeetCode/tree/master/0877-stone-game) |
 | [1140-stone-game-ii](https://github.com/rishabhk159/MyLeetCode/tree/master/1140-stone-game-ii) |
@@ -226,6 +228,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Two Pointers
 |  |
 | ------- |
+| [0005-longest-palindromic-substring](https://github.com/rishabhk159/MyLeetCode/tree/master/0005-longest-palindromic-substring) |
 | [3302-find-the-lexicographically-smallest-valid-sequence](https://github.com/rishabhk159/MyLeetCode/tree/master/3302-find-the-lexicographically-smallest-valid-sequence) |
 | [3534-path-existence-queries-in-a-graph-ii](https://github.com/rishabhk159/MyLeetCode/tree/master/3534-path-existence-queries-in-a-graph-ii) |
 | [3867-sum-of-gcd-of-formed-pairs](https://github.com/rishabhk159/MyLeetCode/tree/master/3867-sum-of-gcd-of-formed-pairs) |
@@ -346,4 +349,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0004-median-of-two-sorted-arrays](https://github.com/rishabhk159/MyLeetCode/tree/master/0004-median-of-two-sorted-arrays) |
+## Manacher
+|  |
+| ------- |
+| [0005-longest-palindromic-substring](https://github.com/rishabhk159/MyLeetCode/tree/master/0005-longest-palindromic-substring) |
 <!---LeetCode Topics End-->
