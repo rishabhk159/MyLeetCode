@@ -1,41 +1,37 @@
 class Solution {
 public:
     int minOperations(vector<vector<int>>& grid, int x) {
-        // Fast I/O
-        ios_base::sync_with_stdio(false);
-        cin.tie(nullptr);
+        vector<int> nums;
 
         int m = grid.size();
         int n = grid[0].size();
-        int total = m * n;
 
-        vector<int> nums;
-        nums.reserve(total);
-
-        int mod = grid[0][0] % x;
-        if (mod < 0) mod += x;
-
-        for (int i = 0; i < m; ++i) {
-            for (int j = 0; j < n; ++j) {
-                int val = grid[i][j];
-                int curMod = val % x;
-                if (curMod < 0) curMod += x;
-
-                // All numbers must have the same remainder modulo x
-                if (curMod != mod) return -1;
-
-                nums.push_back(val);
+        // Flatten the grid
+        for (int i = 0; i < m; i++) {
+            for (int j = 0; j < n; j++) {
+                nums.push_back(grid[i][j]);
             }
         }
 
-        // Quickselect to find the median in O(N) average time
-        int mid = total / 2;
-        nth_element(nums.begin(), nums.begin() + mid, nums.end());
-        int median = nums[mid];
+        // Sort the elements
+        sort(nums.begin(), nums.end());
+
+        // All elements must have the same remainder modulo x
+        int mod = nums[0] % x;
+
+        for (int num : nums) {
+            if (num % x != mod) {
+                return -1;
+            }
+        }
+
+        // Median minimizes the sum of absolute differences
+        int median = nums[nums.size() / 2];
 
         int operations = 0;
-        for (int val : nums) {
-            operations += abs(val - median) / x;
+
+        for (int num : nums) {
+            operations += abs(num - median) / x;
         }
 
         return operations;
