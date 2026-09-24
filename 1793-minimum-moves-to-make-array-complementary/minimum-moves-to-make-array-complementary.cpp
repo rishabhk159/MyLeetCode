@@ -3,37 +3,36 @@ public:
     int minMoves(vector<int>& nums, int limit) {
         int n = nums.size();
 
-        // We only care about sums from 2 to 2 * limit.
         vector<int> diff(2 * limit + 2, 0);
 
         for (int i = 0; i < n / 2; i++) {
             int a = nums[i];
             int b = nums[n - 1 - i];
 
-            if (a > b)
-                swap(a, b);
+            int low = min(a, b);
+            int high = max(a, b);
+            int sum = a + b;
 
-            // With 2 moves, we can get any valid sum.
-            // So initially every sum costs 2 moves.
+            // Initially: 2 moves for every possible sum
+            diff[2] += 2;
 
-            // For sums [a + 1, b + limit],
-            // only 1 move is required.
-            diff[a + 1]--;
-            diff[b + limit + 1]++;
+            // low + 1 ... high + limit : reduce by 1
+            diff[low + 1] -= 1;
+            diff[high + limit + 1] += 1;
 
-            // For sum a + b, we need 0 moves instead of 1.
-            diff[a + b]--;
-            diff[a + b + 1]++;
+            // sum : reduce one more, making it 0 moves
+            diff[sum] -= 1;
+            diff[sum + 1] += 1;
         }
 
-        int moves = n; // Number of pairs * 2
-        int answer = n;
+        int ans = n;
+        int moves = 0;
 
-        for (int sum = 2; sum <= 2 * limit; sum++) {
-            moves += diff[sum];
-            answer = min(answer, moves);
+        for (int s = 2; s <= 2 * limit; s++) {
+            moves += diff[s];
+            ans = min(ans, moves);
         }
 
-        return answer;
+        return ans;
     }
 };
