@@ -2,9 +2,10 @@ class Solution {
 public:
     bool canReach(vector<int>& arr, int start) {
         int n = arr.size();
-        vector<bool> visited(n, false);
 
+        vector<bool> visited(n, false);
         queue<int> q;
+
         q.push(start);
         visited[start] = true;
 
