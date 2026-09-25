@@ -3,16 +3,14 @@ public:
     int minJumps(vector<int>& arr) {
         int n = arr.size();
 
-        if (n == 1) {
+        if (n == 1)
             return 0;
-        }
 
-        // Store all indices for each value
+        // Store all indices having the same value
         unordered_map<int, vector<int>> mp;
 
-        for (int i = 0; i < n; i++) {
+        for (int i = 0; i < n; i++)
             mp[arr[i]].push_back(i);
-        }
 
         queue<int> q;
         vector<bool> visited(n, false);
@@ -29,10 +27,8 @@ public:
                 int i = q.front();
                 q.pop();
 
-                // Reached the last index
-                if (i == n - 1) {
+                if (i == n - 1)
                     return steps;
-                }
 
                 // Jump to i - 1
                 if (i - 1 >= 0 && !visited[i - 1]) {
@@ -46,7 +42,7 @@ public:
                     q.push(i + 1);
                 }
 
-                // Jump to all indices having the same value
+                // Jump to all indices with the same value
                 if (mp.count(arr[i])) {
                     for (int j : mp[arr[i]]) {
                         if (!visited[j]) {
@@ -55,8 +51,8 @@ public:
                         }
                     }
 
-                    // Important: don't process this value again
-                    mp[arr[i]].clear();
+                    // Important: process each value only once
+                    mp.erase(arr[i]);
                 }
             }
 
