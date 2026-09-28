@@ -3,30 +3,32 @@ public:
     int rotatedDigits(int n) {
         int ans = 0;
 
-        for (int x = 1; x <= n; x++) {
-            int num = x;
+        for (int num = 1; num <= n; num++) {
+            int x = num;
             bool valid = true;
             bool changed = false;
 
-            while (num > 0) {
-                int d = num % 10;
+            while (x > 0) {
+                int digit = x % 10;
 
-                if (d == 2 || d == 5 || d == 6 || d == 9) {
-                    changed = true;
-                }
-                else if (d == 0 || d == 1 || d == 8) {
-                    // Valid but unchanged
-                }
-                else {
+                // Invalid digits after rotation
+                if (digit == 3 || digit == 4 || digit == 7) {
                     valid = false;
                     break;
                 }
 
-                num /= 10;
+                // These digits change after rotation
+                if (digit == 2 || digit == 5 ||
+                    digit == 6 || digit == 9) {
+                    changed = true;
+                }
+
+                x /= 10;
             }
 
-            if (valid && changed)
+            if (valid && changed) {
                 ans++;
+            }
         }
 
         return ans;
