@@ -4,12 +4,12 @@ public:
         int depth = 0;
         int ans = 0;
 
-        for (char ch : s) {
-            if (ch == '(') {
+        for (char c : s) {
+            if (c == '(') {
                 depth++;
                 ans = max(ans, depth);
             }
-            else if (ch == ')') {
+            else if (c == ')') {
                 depth--;
             }
         }
